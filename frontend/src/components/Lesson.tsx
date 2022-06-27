@@ -3,6 +3,8 @@ import ptBR from 'date-fns/esm/locale/pt-BR/index.js';
 import {CheckCircle, Lock} from 'phosphor-react'
 import { Link, useParams } from 'react-router-dom';
 import classNamesLib from 'classnames';
+import { MenuStatusContext} from "../context/MenuStatusContext";
+import { useContext } from 'react';
 
 interface LessonProps {
     title: string;
@@ -15,12 +17,14 @@ export function Lesson(props: LessonProps){
     const {slug} = useParams<{slug:string}>()
     const isLessonAvailable = isPast(props.availableAt);
     const isActiveLesson = slug === props.slug;
+    const {isMenuOpen, handleIsMenuOpen} = useContext(MenuStatusContext)
+
     const availableDateFormatted = format(props.availableAt, "EEEE '  •  'd' de 'MMMM' • ' k'h'mm", {
         locale: ptBR
     });
 
     return (
-        <Link to={`/event/lesson/${props.slug}`} className="group">
+        <Link to={`/event/lesson/${props.slug}`} className="group" onClick={()=> handleIsMenuOpen(!isMenuOpen)}>
             <span className="text-gray-300">
                 {availableDateFormatted}
             </span>

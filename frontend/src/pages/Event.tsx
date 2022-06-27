@@ -3,13 +3,13 @@ import { useParams } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { Video } from "../components/Video";
-import { MenuStatusContext, MenuStatusContextProvider } from "../context/MenuStatusContext";
+import { MenuStatusContext} from "../context/MenuStatusContext";
 import { useGetFirstLessonQuery } from "../graphql/generated";
 
 export function Event(){
     const {slug} = useParams<{slug: string}>();
     const {data} = useGetFirstLessonQuery();
-    const {isMenuOpen} = useContext(MenuStatusContext)
+    const {isMenuOpen, handleIsMenuOpen} = useContext(MenuStatusContext)
 
     return (
         
