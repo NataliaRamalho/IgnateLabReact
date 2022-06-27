@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext} from "react";
 import { useParams } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
@@ -12,7 +12,6 @@ export function Event(){
     const {isMenuOpen} = useContext(MenuStatusContext)
 
     return (
-        
         <div className="flex flex-col min-h-screen">
             <Header/>
             {
@@ -27,7 +26,9 @@ export function Event(){
                         {slug ? <Video lessonSlug = {slug}/> : data?.lessons[0] ? 
                                 <Video lessonSlug = {data?.lessons[0].slug}/>  : <div className="flex-1"></div>
                         }
-                        <Sidebar/>
+                        <div className="lg:block hidden ">
+                            <Sidebar/>
+                        </div>
                     </main>
                 )
             }

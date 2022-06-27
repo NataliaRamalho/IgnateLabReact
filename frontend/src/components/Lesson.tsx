@@ -24,7 +24,7 @@ export function Lesson(props: LessonProps){
     });
 
     return (
-        <Link to={`/event/lesson/${props.slug}`} className="group" onClick={()=> handleIsMenuOpen(!isMenuOpen)}>
+        <Link to={`/event/lesson/${props.slug}`} className="group" onClick={()=> isMenuOpen && handleIsMenuOpen(false)}>
             <span className="text-gray-300">
                 {availableDateFormatted}
             </span>

@@ -10,7 +10,7 @@ export function Header(){
                 <div className="lg:w-full basis-5/6 flex justify-center">
                     <Logo/>
                 </div>
-                <div className="lg:hidden visible basis-1/5 flex justify-end md:mr-6 mr-2">
+                <div className="lg:hidden basis-1/5 flex justify-end md:mr-6 mr-2">
                     <button className="space-y-2" onClick={() => {handleIsMenuOpen(!isMenuOpen)}}>
                         {isMenuOpen ? <X size={32}/> : <List size={32}/>}
                     </button>
