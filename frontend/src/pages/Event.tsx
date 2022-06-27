@@ -9,7 +9,7 @@ import { useGetFirstLessonQuery } from "../graphql/generated";
 export function Event(){
     const {slug} = useParams<{slug: string}>();
     const {data} = useGetFirstLessonQuery();
-    const {isMenuOpen, handleIsMenuOpen} = useContext(MenuStatusContext)
+    const {isMenuOpen} = useContext(MenuStatusContext)
 
     return (
         
@@ -27,7 +27,7 @@ export function Event(){
                         {slug ? <Video lessonSlug = {slug}/> : data?.lessons[0] ? 
                                 <Video lessonSlug = {data?.lessons[0].slug}/>  : <div className="flex-1"></div>
                         }
-                            <Sidebar/>
+                        <Sidebar/>
                     </main>
                 )
             }
