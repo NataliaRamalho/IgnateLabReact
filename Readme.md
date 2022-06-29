@@ -6,7 +6,7 @@ Sumário
 =================
    1. [Principais tecnologias](#Principais-tecnologias)
    2. [Funcionalidades desenvolvidas durante as aulas](#Funcionalidades-desenvolvidas-durante-as-aulas)
-   3. [Novas-funcionalidades](#Novas-funcionalidades)
+   3. [Novas funcionalidades](#Novas-funcionalidades)
    4. [Rodando o projeto](#Rodando-o-projeto)
 
 # Principais tecnologias
