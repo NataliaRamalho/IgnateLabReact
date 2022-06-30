@@ -2,7 +2,7 @@
 Projeto desenvolvido durante a semana Ignite Lab React, na qual desenvolveu-se uma plataforma para ser utilizada em eventos como essa semana de programação. Para acessa-la [clique aqui](https://ignite-lab-react-delta-six.vercel.app/)
 
 
-Sumário
+Sumário 📑 
 =================
    1. [Principais tecnologias](#Principais-tecnologias)
    2. [Funcionalidades desenvolvidas durante as aulas](#Funcionalidades-desenvolvidas-durante-as-aulas)
@@ -37,7 +37,7 @@ Sumário
 - Editor de código. Recomenda-se o [VSCode](https://code.visualstudio.com/)
 - Pacote npm ou yarn. O pacote npm vem junto com o [Node.js](https://nodejs.org/en/)
 
-# Rodando o projeto
+# Rodando o projeto ⚙️
 
 - Clone a API desse projeto clicando [aqui](https://app.graphcms.com/clone/0d3ab77f70ff42af805fcf9d81de4615?name=IgniteLab%20-%20001)
 
