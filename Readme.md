@@ -79,5 +79,6 @@ npm install
     npm run dev 
 ```
 
-Parabéns o código está executando em http://localhost:3000/ 😃.
+Parabéns o código está executando em http://localhost:3000/ 😃.                                       
 
+⏰ Projeto desenvolvido em junho/2022
